@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop wd Anusha</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom styles */
+        .navbar {
+            background: linear-gradient(90deg, #4CAF50, #2196F3); /* Attractive gradient */
+            padding: 20px;
+        }
+
+        .navbar-brand img {
+            width: 400px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        /* Align navbar links to the right */
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        /* Navbar link styles */
+        .nav-link {
+            color: white !important; /* White text for navbar links */
+            padding: 10px 15px; /* Padding for links */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+        }
+
+        /* Product section styling */
+        .product-card {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            background-color: #f9f9f9; /* Light background for product cards */
+            border: 1px solid #ddd; /* Border for cards */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px; /* Increased height for product images */
+            object-fit: cover; /* Ensures the image fits without distortion */
+            border-top-left-radius: 10px; /* Rounded corners */
+            border-top-right-radius: 10px; /* Rounded corners */
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product-price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .card-body {
+            flex-grow: 1;
+        }
+
+        .btn {
+            width: 100%; /* Full width for buttons */
+            margin-top: 10px; /* Space above buttons */
+        }
+
+        /* Equal height for product cards */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-3 {
+            padding: 10px;
+            display: flex;
+            align-items: stretch;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-brand img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .product-card img {
+                height: 200px; /* Adjust image height for smaller screens */
+            }
+
+            .col-md-3 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar with nature image on the left and links on the right -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+        <img src="SHOP WITH ANUSHA.png" alt="Nature Image">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Liked Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Search Bar -->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<!-- Product Section -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-3 d-flex">
+            <div class="card product-card">
+                <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="product-title">Green Gown</h5>
+                    <p class="product-price">₹1500</p>
+                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-3 d-flex">
+            <div class="card product-card">
+                <img src="product2.jpg" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <h5 class="product-title">Red Kurti</h5>
+                    <p class="product-price">₹400</p>
+                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-3 d-flex">
+            <div class="card product-card">
+                <img src="product3.jpg" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                    <h5 class="product-title">White Frock</h5>
+                    <p class="product-price">₹500</p>
+                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-3 d-flex">
+            <div class="card product-card">
+                <img src="product4.jpg" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                    <h5 class="product-title">Ethnic Saree</h5>
+                    <p class="product-price">₹1300</p>
+                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-md-3 d-flex">
+            <div class="card product-card">
+                <img src="product5.jpg" class="card-img-top" alt="Product 5">
+                <div class="card-body">
+                    <h5 class="product-title">Western Wear</h5>
+                    <p class="product-price">₹700</p>
+                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-md-3 d-flex">
+            <div class="card product-card">
+                <img src="p6.jpg" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                    <h5 class="product-title">Party Wear</h5>
+                    <p class="product-price">₹1199</p>
+                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-md-3 d-flex">
+            <div class="card product-card">
+                <img src="p7.jpg" class="card-img-top" alt="Product 7">
+                <div class="card-body">
+                    <h5 class="product-title">Crop Top & Blue jeans</h5>
+                    <p class="product-price">₹1600</p>
+                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-md-3 d-flex">
+            <div class="card product-card">
+                <img src="p8.jpg" class="card-img-top" alt="Product 8">
+                <div class="card-body">
+                    <h5 class="product-title">Sharara</h5>
+                    <p class="product-price">₹1100</p>
+                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

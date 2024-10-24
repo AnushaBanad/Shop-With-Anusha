@@ -1,0 +1,43 @@
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+  }
+  
+  .navbar-toggler-icon {
+    color: #000;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px 15px;
+  }
+  
+  /* Search Box Styling */
+  .search-box {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 767.98px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 10px 0;
+    }
+  }
+  
